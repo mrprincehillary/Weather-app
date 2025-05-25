@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #c56423, #2196F3);
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.weather-card {
+    background-color: rgba(255, 255, 255, 0.6); /* 40% transparent */
+    border-radius: 20px;
+    padding: 30px; /* Increased padding for better spacing */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added shadow transition */
+    width: 450px;
+}
+
+.weather-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+#city-input {
+    padding: 15px;
+    margin: 10px 0;
+    width: 75%; /* Increased width for better usability */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px; /* Larger font for better readability */
+}
+
+#city-input:focus {
+    outline: none;
+    border-color: #2196F3;
+    box-shadow: 0 0 5px rgba(33, 150, 243, 0.5); /* Shadow on focus */
+}
+
+#city-input::placeholder {
+    color: #aaa;
+    font-style: italic; /* Italic placeholder for style */
+}
+
+#city-input-btn {
+    padding: 12px 20px; /* Increased padding for the button */
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px; /* Larger font */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+#city-input-btn:hover {
+    background-color: #1565C0;
+}
+
+#weather-info {
+    display: none;
+}
+
+#weather-icon {
+    width: 120px; /* Slightly larger icon */
+    height: 120px;
+}
+
+#temperature {
+    font-size: 28px; /* Larger temperature display */
+    font-weight: bold;
+    margin: 10px 0; /* Increased margin */
+}
+
+#description {
+    font-size: 20px; /* Larger description text */
+    margin-bottom: 15px; /* Increased spacing */
+}
+
+#wind-speed {
+    font-size: 18px; /* Slightly larger wind speed */
+    color: rgb(255, 0, 0);
+}
+
+#date {
+    font-size: 16px; /* Larger date font */
+    color: rgb(255, 0, 0);
+}
